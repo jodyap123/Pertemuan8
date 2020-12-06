@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         val viewPagerAdapter = ViewPagerAdapter(supportFragmentManager)
 
         viewPagerAdapter.tambahFragment(DraftFragment(), "Draft")
+        viewPagerAdapter.tambahFragment(SentFragment(), "Sent")
         viewPager.adapter = viewPagerAdapter
         tabLayout.setupWithViewPager(viewPager)
     }
