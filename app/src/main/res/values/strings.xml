@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Kelompok9_Pertemuan8</string>
     <string name="frag2">Halaman Draft</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="frag3">Halaman Sent</string>
+    <string name="frag1">Halaman Inbox</string>
 </resources>
