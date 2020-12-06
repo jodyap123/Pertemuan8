@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentPagerAdapter
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
 
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,13 +23,13 @@ class MainActivity : AppCompatActivity() {
         val viewPager: ViewPager = findViewById(R.id.view_pager)
         val viewPagerAdapter = ViewPagerAdapter(supportFragmentManager)
 
+        viewPagerAdapter.tambahFragment(DraftFragment(), "Draft")
         viewPager.adapter = viewPagerAdapter
         tabLayout.setupWithViewPager(viewPager)
     }
 
     internal class ViewPagerAdapter(fragmentManager: FragmentManager): FragmentPagerAdapter(
-        fragmentManager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT
-    ){
+        fragmentManager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT){
 
         private val fragments: ArrayList<Fragment>
         private  val juduls:ArrayList<String>
